@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- bean definitions here -->
+	
+	<!-- Injecting collection type Object -->
+		
+		<bean name="emp1" class="com.learnng.collections.Employee">
+			<property name="name" value="Shyam"/>
+			
+			<property name="phones">
+				<list>
+					<value>623526</value>
+					<value>67646</value>
+					<value>321255</value>
+					<value>0885</value>
+					<value>3234626</value>
+					<value>24667</value>
+					<value>00865</value>
+					<null/>
+				</list>
+			</property>
+			
+			<property name="addresses">
+				<set>
+					<value>Bhopal</value>
+					<value>Delhi</value>
+					<value>Patna</value>
+					<value>Punjab</value>
+					<value>Shimla</value>
+					<value>Dehradun</value>
+					<value>Himachal</value>
+				</set>
+			</property>
+			
+			<property name="courses">
+				<map>
+					<entry key="Java" value="2 Month"/>
+					<entry key="c" value="3 Month"/>
+					<entry key="c++" value="5 Month"/>
+					<entry key="Python" value="1 Month"/>
+				</map>
+			
+			</property>
+		
+		</bean>
+	
+</beans>
