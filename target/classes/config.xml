@@ -9,9 +9,10 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 	<!-- bean definitions here -->
 
-	<!--Here, We are using setter injection.-->
-	
-	<bean class="com.learning.SpringCore.Student" name="student1">
+	<!--Here, We are using setter injection. -->
+
+
+<!-- 	<bean class="com.learning.SpringCore.Student" name="student1">
 		<property name="studentId">
 			<value>2341</value>
 		</property>
@@ -23,7 +24,35 @@
 		<property name="studentAddress">
 			<value>Bhopal</value>
 		</property>
+		
+ -->
 
-	</bean>
+		<!--Here, We are using value as attribute -->
 
+
+<!--  
+		<bean class="com.learning.SpringCore.Student" name="student1">
+		
+			<property name="studentId" value="42323" />
+			<property name="studentName" value="Sunak Sukla" />
+			<property name="studentAddress" value="Sikkim" />
+
+		</bean>
+		
+		<bean class="com.learning.SpringCore.Student" name="student2">
+		
+			<property name="studentId" value="5324532" />
+			<property name="studentName" value="Shashank Manohar" />
+			<property name="studentAddress" value="Himachal Pradesh" />
+
+		</bean>
+
+-->
+
+		<!-- Here, we are going to set value using p schema -->
+		
+		<bean class="com.learning.SpringCore.Student" name="student1" p:studentId="43433" p:studentName="Mayank" p:studentAddress="Kohima" />
+
+		<bean class="com.learning.SpringCore.Student" name="student2" p:studentId="3432" p:studentName="Shusant" p:studentAddress="Imphal" />
+		
 </beans>
