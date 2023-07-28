@@ -12,7 +12,7 @@ public class Main {
 		@SuppressWarnings("resource")
 		ApplicationContext contest = new AnnotationConfigApplicationContext(JavaConfigurationClass.class);
 
-		Student student = contest.getBean("firststudent", Student.class);
+		Student student = contest.getBean("getStudent", Student.class);
 		System.out.println(student);
 		student.Study();
 
